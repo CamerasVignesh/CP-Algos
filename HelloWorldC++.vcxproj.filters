@@ -21,6 +21,12 @@
     <ClCompile Include="LCS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GCD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimeNumbersSieve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AllHeaders.h">

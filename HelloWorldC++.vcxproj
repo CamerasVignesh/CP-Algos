@@ -139,8 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GCD.cpp" />
     <ClCompile Include="HelloWorldC++.cpp" />
     <ClCompile Include="LCS.cpp" />
+    <ClCompile Include="PrimeNumbersSieve.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AllHeaders.h" />

@@ -16,38 +16,6 @@
 
 using namespace std;
 
-int gcd(int a, int b)
-{
-    if (b == 0)
-    {
-        return a;
-    }
-    return gcd(b, a % b);
-}
-
-void primes(int n)
-{    
-    vector<int> primeValues;
-    vector<bool> primes(n + 1);
-    for (int i = 2; i <= n; i++)
-    {
-        if (primes[i])
-        {
-            for (int j = i * i; j <= n; j += i)
-            {
-                primes[j] = false;
-            }
-        }
-    }
-    for (int i = 2; i <= n; i++)
-    {
-        if (primes[i])
-        {
-            primeValues.push_back(i);
-        }
-    }
-}
-
 pair<int, vector<string>> input()
 {
     int n = 5;
