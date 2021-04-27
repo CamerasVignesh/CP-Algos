@@ -142,6 +142,7 @@
     <ClCompile Include="DFSDPTopologicalSortDAG.cpp" />
     <ClCompile Include="GCD.cpp" />
     <ClCompile Include="HelloWorldC++.cpp" />
+    <ClCompile Include="Knapsack.cpp" />
     <ClCompile Include="LCS.cpp" />
     <ClCompile Include="PrimeNumbersSieve.cpp" />
     <ClCompile Include="KahnTopologicalSortDAG.cpp" />

@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Topological Sort">
+      <UniqueIdentifier>{c30e34fd-aae3-41a4-b354-f42789596a21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Knapsack">
+      <UniqueIdentifier>{b16b7201-76bd-4164-aa87-555dccdc6ef9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HelloWorldC++.cpp">
@@ -27,11 +33,14 @@
     <ClCompile Include="PrimeNumbersSieve.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="KahnTopologicalSortDAG.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="DFSDPTopologicalSortDAG.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Topological Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="KahnTopologicalSortDAG.cpp">
+      <Filter>Source Files\Topological Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Knapsack.cpp">
+      <Filter>Source Files\Knapsack</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
