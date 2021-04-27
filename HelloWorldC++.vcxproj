@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DFSDPTopologicalSortDAG.cpp" />
     <ClCompile Include="GCD.cpp" />
     <ClCompile Include="HelloWorldC++.cpp" />
     <ClCompile Include="LCS.cpp" />

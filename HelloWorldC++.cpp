@@ -31,15 +31,14 @@ pair<int, vector<string>> input()
 
 void solve(int tt)
 {
-
+    
 }
 
 int main()
 {
     ios_base::sync_with_stdio(false), cin.tie(nullptr);
     int t = 1;
-    cin >> t;
-    vector<vector<int>> matrix = { {7,8,9}, {9,7,6}, {7,2,3} };
+    //cin >> t;
     for (int i = 1; i<= t; i++)
     {
         solve(i);
