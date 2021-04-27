@@ -143,6 +143,7 @@
     <ClCompile Include="HelloWorldC++.cpp" />
     <ClCompile Include="LCS.cpp" />
     <ClCompile Include="PrimeNumbersSieve.cpp" />
+    <ClCompile Include="KahnTopologicalSortDAG.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AllHeaders.h" />

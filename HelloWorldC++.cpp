@@ -29,61 +29,17 @@ pair<int, vector<string>> input()
     return make_pair(n, numbers);
 }
 
-
-
-
 void solve(int tt)
 {
-    string a, b;
-    cin >> a >> b;
-    string ans = "";
-    int m, n;    
-    m = a.size();
-    n = b.size();
-    vector<vector<int>> dp(m + 1, vector<int>(n + 1, 0));
-    for (int i = 1; i <= m; i++)
-    {
-        for (int j = 1; j <= n; j++)
-        {
-            if (a[i - 1] == b[j - 1])
-            {
-                dp[i][j] = dp[i - 1][j - 1] + 1;
-            }
-            else
-            {
-                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
-            }
-        }
-    }
 
-    int i = 0;
-    int j = 0;
-    while (i < m && j < n)
-    {
-        if (a[i] == b[j])
-        {
-            ans += a[i];
-            i++;
-            j++;
-        }
-        else if (dp[i + 1][j] > dp[i][j + 1])
-        {
-            i++;
-        }
-        else
-        {
-            j++;
-        }
-    }
-    //reverse(ans.begin(), ans.end());
-    cout << ans;
 }
 
 int main()
 {
     ios_base::sync_with_stdio(false), cin.tie(nullptr);
     int t = 1;
-    //cin >> t;
+    cin >> t;
+    vector<vector<int>> matrix = { {7,8,9}, {9,7,6}, {7,2,3} };
     for (int i = 1; i<= t; i++)
     {
         solve(i);

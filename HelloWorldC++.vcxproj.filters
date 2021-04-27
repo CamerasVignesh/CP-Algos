@@ -27,6 +27,9 @@
     <ClCompile Include="PrimeNumbersSieve.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="KahnTopologicalSortDAG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AllHeaders.h">
