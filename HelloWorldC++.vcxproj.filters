@@ -19,6 +19,18 @@
     <Filter Include="Source Files\Knapsack">
       <UniqueIdentifier>{b16b7201-76bd-4164-aa87-555dccdc6ef9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Competitions">
+      <UniqueIdentifier>{020ec250-1596-4e37-aade-a74c77296c6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Competitions\CodeJam">
+      <UniqueIdentifier>{89afe9af-aee7-41fa-afc0-37aba70a18d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Competitions\CodeJam\2021">
+      <UniqueIdentifier>{cef0eb74-f34e-4e3d-a1b3-100c1e9e04f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DjikstraMaximise">
+      <UniqueIdentifier>{5abea760-ebf2-410e-b489-dc522733633f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HelloWorldC++.cpp">
@@ -41,6 +53,12 @@
     </ClCompile>
     <ClCompile Include="Knapsack.cpp">
       <Filter>Source Files\Knapsack</Filter>
+    </ClCompile>
+    <ClCompile Include="1C.cpp">
+      <Filter>Competitions\CodeJam\2021</Filter>
+    </ClCompile>
+    <ClCompile Include="MaximiseProbabilityDjikstra.cpp">
+      <Filter>Source Files\DjikstraMaximise</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

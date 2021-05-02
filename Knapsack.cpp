@@ -15,7 +15,7 @@
 
 using namespace std;
 
-void solve(int tt)
+void knapsack(int tt)
 {
     long long N, W;
     cin >> N >> W;

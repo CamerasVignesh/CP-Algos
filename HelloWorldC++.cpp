@@ -16,29 +16,16 @@
 
 using namespace std;
 
-pair<int, vector<string>> input()
+void solve()
 {
-    int n = 5;
-    int maxX = 1002;
-    vector<string> numbers;
-    for (int i = 0; i < n; i++)
-    {
-        int val = (rand() % maxX) + 1;
-        numbers.push_back(to_string(val));
-    }
-    return make_pair(n, numbers);
-}
 
-void solve(int tt)
-{
-    
 }
 
 int main()
 {
     ios_base::sync_with_stdio(false), cin.tie(nullptr);
     int t = 1;
-    //cin >> t;
+    //cin >> t;    
     for (int i = 1; i<= t; i++)
     {
         solve(i);
