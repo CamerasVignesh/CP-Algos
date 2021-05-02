@@ -16,7 +16,7 @@
 
 using namespace std;
 
-void solve()
+void solve(int tt)
 {
 
 }
