@@ -63,6 +63,9 @@
     <ClCompile Include="MinimiseDjikstra.cpp">
       <Filter>Source Files\DjikstraMaximise</Filter>
     </ClCompile>
+    <ClCompile Include="MinimiseMaxDifferenceMatrixDjikstra.cpp">
+      <Filter>Source Files\DjikstraMaximise</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AllHeaders.h">
