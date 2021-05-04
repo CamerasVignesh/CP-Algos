@@ -16,21 +16,18 @@
 
 using namespace std;
 
-
-
-void solve(int tt)
+//Calculating x^n
+long long power(long long x, long long n)
 {
-    
-}
-
-
-int main()
-{
-    ios_base::sync_with_stdio(false), cin.tie(nullptr);
-    int t = 1;
-    //cin >> t; 
-    for (int i = 1; i<= t; i++)
+    long long ans = 1;
+    while (n > 0)
     {
-        solve(i);
-    }       
+        if (n % 2)
+        {
+            ans *= x;
+        }
+        x = x * x;
+        n = n / 2;
+    }
+    return ans;
 }

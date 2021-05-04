@@ -31,6 +31,9 @@
     <Filter Include="Source Files\DjikstraMaximise">
       <UniqueIdentifier>{5abea760-ebf2-410e-b489-dc522733633f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\BinaryExponentiation">
+      <UniqueIdentifier>{f99a50a2-b37d-4eaf-a46e-17f6244b862a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HelloWorldC++.cpp">
@@ -65,6 +68,9 @@
     </ClCompile>
     <ClCompile Include="MinimiseMaxDifferenceMatrixDjikstra.cpp">
       <Filter>Source Files\DjikstraMaximise</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryExponents.cpp">
+      <Filter>Source Files\BinaryExponentiation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

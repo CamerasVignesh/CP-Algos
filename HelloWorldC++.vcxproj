@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="1C.cpp" />
+    <ClCompile Include="BinaryExponents.cpp" />
     <ClCompile Include="DFSDPTopologicalSortDAG.cpp" />
     <ClCompile Include="GCD.cpp" />
     <ClCompile Include="HelloWorldC++.cpp" />
