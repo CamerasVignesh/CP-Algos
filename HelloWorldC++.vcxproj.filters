@@ -34,15 +34,15 @@
     <Filter Include="Source Files\BinaryExponentiation">
       <UniqueIdentifier>{f99a50a2-b37d-4eaf-a46e-17f6244b862a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\GCD">
+      <UniqueIdentifier>{bd050bbb-48ff-45f7-bb7b-f167037c69ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HelloWorldC++.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="LCS.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GCD.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PrimeNumbersSieve.cpp">
@@ -71,6 +71,12 @@
     </ClCompile>
     <ClCompile Include="BinaryExponents.cpp">
       <Filter>Source Files\BinaryExponentiation</Filter>
+    </ClCompile>
+    <ClCompile Include="GCD.cpp">
+      <Filter>Source Files\GCD</Filter>
+    </ClCompile>
+    <ClCompile Include="EuclideanExtended.cpp">
+      <Filter>Source Files\GCD</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
