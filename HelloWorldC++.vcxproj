@@ -142,6 +142,7 @@
     <ClCompile Include="1C.cpp" />
     <ClCompile Include="BinaryExponents.cpp" />
     <ClCompile Include="DFSDPTopologicalSortDAG.cpp" />
+    <ClCompile Include="DistinctAlphabets.cpp" />
     <ClCompile Include="EuclideanExtended.cpp" />
     <ClCompile Include="GCD.cpp" />
     <ClCompile Include="HelloWorldC++.cpp" />
@@ -150,8 +151,11 @@
     <ClCompile Include="MaximiseProbabilityDjikstra.cpp" />
     <ClCompile Include="MinimiseDjikstra.cpp" />
     <ClCompile Include="MinimiseMaxDifferenceMatrixDjikstra.cpp" />
+    <ClCompile Include="NCRModP.cpp" />
+    <ClCompile Include="NumberOfCoprimeNumbers.cpp" />
     <ClCompile Include="PrimeNumbersSieve.cpp" />
     <ClCompile Include="KahnTopologicalSortDAG.cpp" />
+    <ClCompile Include="SmallestPrimeDivisor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AllHeaders.h" />
