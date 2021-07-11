@@ -13,91 +13,16 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Topological Sort">
-      <UniqueIdentifier>{c30e34fd-aae3-41a4-b354-f42789596a21}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Knapsack">
-      <UniqueIdentifier>{b16b7201-76bd-4164-aa87-555dccdc6ef9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Competitions">
       <UniqueIdentifier>{020ec250-1596-4e37-aade-a74c77296c6a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Competitions\CodeJam">
-      <UniqueIdentifier>{89afe9af-aee7-41fa-afc0-37aba70a18d7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Competitions\CodeJam\2021">
-      <UniqueIdentifier>{cef0eb74-f34e-4e3d-a1b3-100c1e9e04f8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\DjikstraMaximise">
-      <UniqueIdentifier>{5abea760-ebf2-410e-b489-dc522733633f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\BinaryExponentiation">
-      <UniqueIdentifier>{f99a50a2-b37d-4eaf-a46e-17f6244b862a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\GCD">
-      <UniqueIdentifier>{bd050bbb-48ff-45f7-bb7b-f167037c69ef}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\PrimeNumbers">
-      <UniqueIdentifier>{7e5f98a8-dff9-4b9c-a92e-02999f898b4d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\nCr">
-      <UniqueIdentifier>{c6e08c33-d334-4538-93d4-f682ecd975f2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\SegmentTree">
-      <UniqueIdentifier>{68d71577-144e-476b-9e76-efae3458891d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HelloWorldC++.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LCS.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DFSDPTopologicalSortDAG.cpp">
-      <Filter>Source Files\Topological Sort</Filter>
-    </ClCompile>
-    <ClCompile Include="KahnTopologicalSortDAG.cpp">
-      <Filter>Source Files\Topological Sort</Filter>
-    </ClCompile>
-    <ClCompile Include="Knapsack.cpp">
-      <Filter>Source Files\Knapsack</Filter>
-    </ClCompile>
-    <ClCompile Include="1C.cpp">
-      <Filter>Competitions\CodeJam\2021</Filter>
-    </ClCompile>
-    <ClCompile Include="MaximiseProbabilityDjikstra.cpp">
-      <Filter>Source Files\DjikstraMaximise</Filter>
-    </ClCompile>
-    <ClCompile Include="MinimiseDjikstra.cpp">
-      <Filter>Source Files\DjikstraMaximise</Filter>
-    </ClCompile>
-    <ClCompile Include="MinimiseMaxDifferenceMatrixDjikstra.cpp">
-      <Filter>Source Files\DjikstraMaximise</Filter>
-    </ClCompile>
-    <ClCompile Include="BinaryExponents.cpp">
-      <Filter>Source Files\BinaryExponentiation</Filter>
-    </ClCompile>
-    <ClCompile Include="GCD.cpp">
-      <Filter>Source Files\GCD</Filter>
-    </ClCompile>
-    <ClCompile Include="EuclideanExtended.cpp">
-      <Filter>Source Files\GCD</Filter>
-    </ClCompile>
-    <ClCompile Include="PrimeNumbersSieve.cpp">
-      <Filter>Source Files\PrimeNumbers</Filter>
-    </ClCompile>
-    <ClCompile Include="SmallestPrimeDivisor.cpp">
-      <Filter>Source Files\PrimeNumbers</Filter>
-    </ClCompile>
-    <ClCompile Include="NumberOfCoprimeNumbers.cpp">
-      <Filter>Source Files\PrimeNumbers</Filter>
-    </ClCompile>
-    <ClCompile Include="NCRModP.cpp">
-      <Filter>Source Files\nCr</Filter>
-    </ClCompile>
-    <ClCompile Include="DistinctAlphabets.cpp">
-      <Filter>Source Files\SegmentTree</Filter>
+    <ClCompile Include="KickStartD2021.cpp">
+      <Filter>Competitions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

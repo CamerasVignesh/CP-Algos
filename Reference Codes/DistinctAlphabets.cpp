@@ -22,11 +22,11 @@ using namespace std;
 
 const int maxN = 1e5 + 5;
 
-vector<vector<bool>> tree(4 * maxN, vector<bool>(26, false));
+vector<vector<bool>> treeAlphabets(4 * maxN, vector<bool>(26, false));
 
 string s;
 
-vector<bool> combine(vector<bool> a, vector<bool> b)
+vector<bool> combineAlphabets(vector<bool> a, vector<bool> b)
 {
     vector<bool> ans = a;
     for (int i = 0; i < 26; i++)
@@ -42,14 +42,14 @@ void build(int v, int tl, int tr)
     {
         vector<bool> st(26, false);
         st[s[tl] - 'a'] = true;
-        tree[v] = st;
+        treeAlphabets[v] = st;
     }
     else
     {
         int tm = (tl + tr) / 2;
         build(2 * v, tl, tm);
         build(2 * v + 1, tm + 1, tr);
-        tree[v] = combine(tree[2 * v], tree[2 * v + 1]);
+        treeAlphabets[v] = combineAlphabets(treeAlphabets[2 * v], treeAlphabets[2 * v + 1]);
     }
 }
 
@@ -62,9 +62,9 @@ vector<bool> value(int v, int tl, int tr, int l, int r)
     int tm = (tl + tr) / 2;
     if (l == tl && r == tr)
     {
-        return tree[v];
+        return treeAlphabets[v];
     }
-    return combine(value(2 * v, tl, tm, l, min(tm, r)), value(2 * v + 1, tm + 1, tr, max(tm + 1, l), r));
+    return combineAlphabets(value(2 * v, tl, tm, l, min(tm, r)), value(2 * v + 1, tm + 1, tr, max(tm + 1, l), r));
 }
 
 void update(int v, int tl, int tr, int pos, char val)
@@ -73,7 +73,7 @@ void update(int v, int tl, int tr, int pos, char val)
     {
         vector<bool> st(26, false);
         st[val - 'a'] = true;
-        tree[v] = st;
+        treeAlphabets[v] = st;
     }
     else
     {
@@ -86,11 +86,11 @@ void update(int v, int tl, int tr, int pos, char val)
         {
             update(2 * v + 1, tm + 1, tr, pos, val);
         }
-        tree[v] = combine(tree[2 * v], tree[2 * v + 1]);
+        treeAlphabets[v] = combineAlphabets(treeAlphabets[2 * v], treeAlphabets[2 * v + 1]);
     }
 }
 
-void solve(int tt)
+void solveDistinctAlphabets(int tt)
 {
     cin >> s;
     int n = s.size();
