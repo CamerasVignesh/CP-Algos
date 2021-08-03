@@ -40,11 +40,23 @@ void solveQ1(int tt)
         ans++;
     }
     map<long long, long long> mp;
-    mp[a[0][0] + a[2][2]]++;
-    mp[a[0][1] + a[2][1]]++;
-    mp[a[0][2] + a[2][0]]++;
-    mp[a[1][2] + a[1][0]]++;
-    long long curr = 1;
+    if (abs(a[0][0] + a[2][2]) % 2 == 0)
+    {
+        mp[a[0][0] + a[2][2]]++;
+    }
+    if (abs(a[0][1] + a[2][1]) % 2 == 0)
+    {
+        mp[a[0][1] + a[2][1]]++;
+    }
+    if (abs(a[0][2] + a[2][0]) % 2 == 0)
+    {
+        mp[a[0][2] + a[2][0]]++;
+    }
+    if (abs(a[1][2] + a[1][0]) % 2 == 0)
+    {
+        mp[a[1][2] + a[1][0]]++;
+    }
+    long long curr = 0;
     for (const auto& it : mp)
     {
         if (it.second > curr)
@@ -58,32 +70,80 @@ void solveQ1(int tt)
 
 void solveQ2(int tt)
 {
+    map<long long, int> intervals;
+
+    auto cmp = [](pair<int, long long> a, pair<int, long long> b)
+    {
+        if (a.first > b.first)
+        {
+            return true;
+        }
+        else if (b.first > a.first)
+        {
+            return false;
+        }
+        return a.second < b.second;
+    };
+
+    set<pair<int, long long>, decltype(cmp)> s(cmp);
+
     int n;
     cin >> n;
     long long c;
     cin >> c;
-    long long ans = 0;
-    map<long long, long long> intervals;
-    map<long long, long long> count;
     for (int i = 0; i < n; i++)
     {
-        long long l;
-        long long r;
+        long long l, r;
         cin >> l >> r;
+        l--;
+        r--;
         intervals[l]++;
         intervals[r + 1]--;
-        count[l]++;
-        count[r]++;
     }
-    vector<pair<long long, long long>> values;
+    long long val = 0;
+
     for (const auto& it : intervals)
     {
-        values.emplace_back(it.second, it.first);
+        val += it.second;
+        s.insert(make_pair(val, it.first));
     }
-    sort(values.begin(), values.end());
-    for (long long i = 0; i < c; i++)
-    {
 
+    vector<pair<long long, int>> vec;
+
+    for (auto it = s.begin(); it != s.end(); it++)
+    {
+        vec.emplace_back(it->first, it->second);
+    }
+
+    long long ans = 0;
+
+    long long curr = 0;
+
+    for (int i = 0; i < vec.size() - 1;)
+    {
+        if (c <= 0)
+        {
+            break;
+        }
+        curr = vec[i].first;
+        int j = i + 1;
+        while (j < n && vec[j].first == curr)
+        {
+            ans += min(c, (long long)j - i - 1);
+            c -= min(c, (long long)j - i - 1);
+            if (c <= 0)
+            {
+                break;
+            }
+            j++;
+        }
+
+        for (int k = i; k < j; k++)
+        {
+            //ans += min(c, (long long) )
+        }
+
+        i = j;
     }
 }
 

@@ -13,11 +13,10 @@
 #include <cassert>
 #include <unordered_set>
 #include <iomanip>
-//#include <bits/stdc++.h>
 
 using namespace std;
 
-void solve()
+void solve(int tt)
 {
 
 }
@@ -29,6 +28,6 @@ int main()
     cin >> t; 
     for (int i = 1; i <= t; i++)
     {
-        solve();
+        solve(i);
     }      
 }
