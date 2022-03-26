@@ -24,6 +24,9 @@
     <ClCompile Include="KickStartD2021.cpp">
       <Filter>Competitions</Filter>
     </ClCompile>
+    <ClCompile Include="Reference Codes\MinimumSpanningTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AllHeaders.h">

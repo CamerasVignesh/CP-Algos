@@ -16,8 +16,17 @@
 
 using namespace std;
 
+using ll = long long;
 
-void solve()
+const vector<int> dx = { 0, 1, 0, -1 };
+
+const vector<int> dy = { 1, 0, -1, 0 };
+
+const int MOD = 1e9 + 7;
+
+const int INF = 1e9 + 5;
+
+void solve(int tt)
 {
     
 }
@@ -25,10 +34,11 @@ void solve()
 int main()
 {
     ios_base::sync_with_stdio(false), cin.tie(nullptr);
-    int t = 1;
-    cin >> t;
-    for (int i = 0; i < t; i++)
+    int T = 1;
+    cin >> T;
+    for (int i = 1; i <= T; i++)
     {
-        solve();
+        solve(i);
     }
 }
+
