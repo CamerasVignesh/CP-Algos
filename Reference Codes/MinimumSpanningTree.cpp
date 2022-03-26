@@ -94,3 +94,82 @@ int minCostConnectPoints(vector<vector<int>>& points)
     }
     return ans;
 }
+
+
+
+int findGroup(vector<int>& parent, int node)
+{
+    if (node == parent[node])
+    {
+        return node;
+    }
+    return parent[node] = findGroup(parent, parent[node]);
+}
+
+void unionGroup(int u, int v, vector<int>& parent, vector<int>& rank)
+{
+    u = findGroup(parent, u);
+    v = findGroup(parent, v);
+    if (u != v)
+    {
+        if (rank[u] < rank[v])
+        {
+            swap(u, v);
+        }
+        parent[v] = u;
+        if (rank[u] == rank[v])
+        {
+            rank[u]++;
+        }
+    }
+}
+
+/// <summary>
+/// O(ElogV + V + E)
+/// </summary>
+/// <param name="points"></param>
+/// <returns></returns>
+int minCostConnectPointsUsingDSU(vector<vector<int>>& points)
+{
+    int ans = 0;
+    int n = points.size();
+    vector<Edge> edges;
+
+    vector<Edge> edgesCreated;
+
+    for (int u = 0; u < n; u++)
+    {
+        for (int v = u + 1; v < n; v++)
+        {
+            //The weight of each edge is the Manhattan distance between its end points
+            int weight = abs(points[u][0] - points[v][0]) + abs(points[u][1] - points[v][1]);
+            Edge edge = Edge(u, v, weight);
+            edges.push_back(edge);
+        }
+    }
+
+    //Sort edges by their weights
+    sort(edges.begin(), edges.end());
+
+    //Parent[i] denotes which group it belongs to so that union can be done in O(1)
+    vector<int> parent(n);
+
+    //Rank[i] denotes the number of nodes under this tree
+    vector<int> rank(n);
+    for (int i = 0; i < n; i++)
+    {
+        parent[i] = i;
+        rank[i] = 0;
+    }
+
+    for (Edge edge : edges)
+    {
+        if (findGroup(parent, edge.u) != findGroup(parent, edge.v))
+        {
+            ans += edge.weight;
+            edgesCreated.push_back(edge);
+            unionGroup(edge.u, edge.v, parent, rank);
+        }
+    }
+    return ans;
+}
