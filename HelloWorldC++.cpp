@@ -13,6 +13,7 @@
 #include <cassert>
 #include <unordered_set>
 #include <iomanip>
+#include <random>
 
 using namespace std;
 
@@ -38,7 +39,7 @@ int main()
     cin >> T;
     for (int i = 1; i <= T; i++)
     {
+        
         solve(i);
     }
 }
-
