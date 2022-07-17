@@ -32,14 +32,15 @@ void solve(int tt)
     
 }
 
+
 int main()
 {
     ios_base::sync_with_stdio(false), cin.tie(nullptr);
     int T = 1;
     cin >> T;
     for (int i = 1; i <= T; i++)
-    {
-        
+    {   
         solve(i);
     }
+
 }

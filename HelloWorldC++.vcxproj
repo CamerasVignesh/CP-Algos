@@ -141,6 +141,8 @@
   <ItemGroup>
     <ClCompile Include="HelloWorldC++.cpp" />
     <ClCompile Include="KickStartD2021.cpp" />
+    <ClCompile Include="Reference Codes\DetectAllCycleSizes.cpp" />
+    <ClCompile Include="Reference Codes\EvenCycleDetection.cpp" />
     <ClCompile Include="Reference Codes\InversionsMergeSort.cpp" />
     <ClCompile Include="Reference Codes\MinimumSpanningTree.cpp" />
   </ItemGroup>
