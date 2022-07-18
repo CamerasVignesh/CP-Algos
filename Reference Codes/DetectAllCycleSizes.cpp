@@ -40,7 +40,7 @@ int dfs(int node, const vector<vector<int>>& adj, vector<bool>& visited)
     return 1;
 }
 
-void solve(int tt)
+void DetectAllCycleSizes(int tt)
 {
     int n;
     cin >> n;

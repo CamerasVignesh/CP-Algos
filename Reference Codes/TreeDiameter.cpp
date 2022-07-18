@@ -29,7 +29,7 @@ const int INF = 1e9 + 5;
 
 
 
-void solve(int tt)
+void TreeDiameterAndCircumference(int tt)
 {
     int n;
     cin >> n;
@@ -43,7 +43,7 @@ void solve(int tt)
         adj[u].push_back(v);
         adj[v].push_back(u);
     }
-    
+
     auto bfs = [&](int source, int& depth) -> int
     {
         queue<int> q;
@@ -66,7 +66,7 @@ void solve(int tt)
                         end = nei;
                         visited[nei] = true;
                     }
-                }                
+                }
             }
             depth++;
         }
@@ -84,17 +84,4 @@ void solve(int tt)
     //Circumference
 
     cout << 3 * ans;
-}
-
-
-int main()
-{
-    ios_base::sync_with_stdio(false), cin.tie(nullptr);
-    int T = 1;
-    //cin >> T;
-    for (int i = 1; i <= T; i++)
-    {   
-        solve(i);
-    }
-
 }
